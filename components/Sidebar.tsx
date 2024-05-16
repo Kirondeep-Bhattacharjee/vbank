@@ -1,3 +1,5 @@
+'use client'
+
 import { sidebarLinks } from '@/constants'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
@@ -6,11 +8,7 @@ import { usePathname } from 'next/navigation'
 import Footer from './Footer'
 import PlaidLink from './PlaidLink'
 
-interface SidebarProps {
-  user: UserType; // Assuming UserType is defined elsewhere
-}
-
-const Sidebar = ({ user }: SidebarProps) => {
+const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
 
   return (
@@ -59,4 +57,4 @@ const Sidebar = ({ user }: SidebarProps) => {
   )
 }
 
-export default Sidebar;
+export default Sidebar
